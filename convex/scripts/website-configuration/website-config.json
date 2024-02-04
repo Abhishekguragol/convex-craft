@@ -1,0 +1,347 @@
+{
+  "appStructure": {
+    "components": [
+      {
+        "name": "div",
+        "props": {
+          "className": "App"
+        },
+        "children": [
+          {
+            "name": "Navbar",
+            "children": [
+              {
+                "name": "NavbarContent",
+                "props": {
+                  "className": "sm:flex gap-4",
+                  "justify": "center"
+                },
+                "children": [
+                  {
+                    "name": "NavbarItem",
+                    "children": [
+                      {
+                        "name": "Link",
+                        "props": {
+                          "color": "primary",
+                          "href": "#"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "NavbarItem",
+                    "props": {},
+                    "children": [
+                      {
+                        "name": "Link",
+                        "props": {
+                          "href": "#",
+                          "current": "page"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "NavbarItem",
+                    "children": [
+                      {
+                        "name": "Link",
+                        "props": {
+                          "color": "foreground",
+                          "href": "#"
+                        },
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "NavbarContent",
+                "props": {
+                  "justify": "end"
+                },
+                "children": [
+                  {
+                    "name": "NavbarItem",
+                    "props": {
+                      "className": "hidden lg:flex"
+                    },
+                    "children": [
+                      {
+                        "name": "Link",
+                        "props": {
+                          "href": "#"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "NavbarItem",
+                    "children": [
+                      {
+                        "name": "Button",
+                        "props": {
+                          "color": "primary",
+                          "href": "#",
+                          "variant": "flat"
+                        },
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Accordion",
+            "children": [
+              {
+                "name": "AccordionItem",
+                "props": {
+                  "key": "1",
+                  "label": "Accordion 1",
+                  "title": "Accordion 1"
+                },
+                "children": []
+              },
+              {
+                "name": "AccordionItem",
+                "props": {
+                  "key": "2",
+                  "label": "Accordion 2",
+                  "title": "Accordion 2"
+                },
+                "children": []
+              },
+              {
+                "name": "AccordionItem",
+                "props": {
+                  "key": "3",
+                  "label": "Accordion 3",
+                  "title": "Accordion 3"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "div",
+        "props": {
+          "className": "component"
+        },
+        "children": [
+          {
+            "name": "Card",
+            "children": [
+              {
+                "name": "CardBody",
+                "children": [
+                  {
+                    "name": "p",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "div",
+        "props": {
+          "className": "component"
+        },
+        "children": [
+          {
+            "name": "Tabs",
+            "props": {
+              "label": "Options"
+            },
+            "children": [
+              {
+                "name": "Tab",
+                "props": {
+                  "key": "photos",
+                  "title": "Photos"
+                },
+                "children": [
+                  {
+                    "name": "Card",
+                    "children": [
+                      {
+                        "name": "CardBody",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Tab",
+                "props": {
+                  "key": "music",
+                  "title": "Music"
+                },
+                "children": [
+                  {
+                    "name": "Card",
+                    "children": [
+                      {
+                        "name": "CardBody",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Tab",
+                "props": {
+                  "key": "videos",
+                  "title": "Videos"
+                },
+                "children": [
+                  {
+                    "name": "Card",
+                    "children": [
+                      {
+                        "name": "CardBody",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "div",
+        "props": {
+          "className": "component"
+        },
+        "children": [
+          {
+            "name": "Table",
+            "props": {
+              "label": "Example static collection table"
+            },
+            "children": [
+              {
+                "name": "TableHeader",
+                "children": [
+                  {
+                    "name": "TableColumn",
+                    "children": []
+                  },
+                  {
+                    "name": "TableColumn",
+                    "children": []
+                  },
+                  {
+                    "name": "TableColumn",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "TableBody",
+                "children": [
+                  {
+                    "name": "TableRow",
+                    "props": {
+                      "key": "1"
+                    },
+                    "children": [
+                      {
+                        "name": "TableCell",
+                        "children": []
+                      },
+                      {
+                        "name": "TableCell",
+                        "children": []
+                      },
+                      {
+                        "name": "TableCell",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "TableRow",
+                    "props": {
+                      "key": "2"
+                    },
+                    "children": [
+                      {
+                        "name": "TableCell",
+                        "children": []
+                      },
+                      {
+                        "name": "TableCell",
+                        "children": []
+                      },
+                      {
+                        "name": "TableCell",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "TableRow",
+                    "props": {
+                      "key": "3"
+                    },
+                    "children": [
+                      {
+                        "name": "TableCell",
+                        "children": []
+                      },
+                      {
+                        "name": "TableCell",
+                        "children": []
+                      },
+                      {
+                        "name": "TableCell",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "TableRow",
+                    "props": {
+                      "key": "4"
+                    },
+                    "children": [
+                      {
+                        "name": "TableCell",
+                        "children": []
+                      },
+                      {
+                        "name": "TableCell",
+                        "children": []
+                      },
+                      {
+                        "name": "TableCell",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
