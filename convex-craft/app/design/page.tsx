@@ -1,4 +1,4 @@
-import { Sidebar } from "@/components/custom/sidebar";
+import Sidebar  from "@/components/custom/sidebar";
 import "./page.css"
 import { Button } from "@/components/ui/button";
 import React from "react";
