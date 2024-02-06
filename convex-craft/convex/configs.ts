@@ -41,7 +41,7 @@ export const readConfigsForWebsite = query({
         websiteId: v.id("websites"),
     },
     handler: async (ctx, args) => {
-        return await ctx.db
+        return ctx.db
             .query("configs")
             .filter((q) => q.eq(q.field("website"), args.websiteId))
             .collect();
@@ -80,6 +80,18 @@ export const updateConfigComponents = mutation({
     handler: async (ctx, args) => {
         await ctx.db.patch(args.configId, {
             components: args.updatedComponents,
+        });
+    },
+});
+
+export const updateConfigCurrentlyEditing = mutation({
+    args: {
+        configId: v.id("configs"),
+        currentlyEditing: v.array(v.id("users")),
+    },
+    handler: async (ctx, args) => {
+        await ctx.db.patch(args.configId, {
+            currently_editing: args.currentlyEditing,
         });
     },
 });
