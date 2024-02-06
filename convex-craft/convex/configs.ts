@@ -1,7 +1,23 @@
 import { mutation, query } from "./_generated/server";
 import { v } from "convex/values";
 
-export const createNewConfig = mutation({
+export const createConfig = mutation({
+    args: {
+        version: v.string(),
+        website: v.id("websites"),
+        userId: v.id("users"),
+    },
+    handler: async (ctx, args) => {
+        await ctx.db.insert("configs", {
+            version: args.version,
+            website: args.website,
+            components: [],
+            currently_editing: [args.userId],
+        });
+    },
+});
+
+export const createVersion = mutation({
     args: {
         baseConfigId: v.id("configs"),
         version: v.string(),
@@ -26,8 +42,8 @@ export const readConfigsForWebsite = query({
     },
     handler: async (ctx, args) => {
         return await ctx.db
-            .query("websites")
-            .filter((q) => q.eq(q.field("_id"), args.websiteId))
+            .query("configs")
+            .filter((q) => q.eq(q.field("website"), args.websiteId))
             .collect();
     },
 });
@@ -44,7 +60,6 @@ export const readConfig = query({
 export const updateConfig = mutation({
     args: {
         configId: v.id("configs"),
-        userId: v.id("users"),
         updatedConfig: v.object({
             version: v.string(),
             website: v.id("websites"),
@@ -60,7 +75,6 @@ export const updateConfig = mutation({
 export const updateConfigComponents = mutation({
     args: {
         configId: v.id("configs"),
-        userId: v.id("users"),
         updatedComponents: v.array(v.string()),
     },
     handler: async (ctx, args) => {
