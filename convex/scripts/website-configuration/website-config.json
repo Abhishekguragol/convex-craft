@@ -1,0 +1,500 @@
+{
+  "imports": [
+    {
+      "imported": "React",
+      "path": "react"
+    },
+    {
+      "imported": "{\n    Accordion,\n    AccordionItem,\n    Card,\n    CardBody,\n    Navbar,\n    NavbarContent,\n    NavbarItem,\n    Link,\n    Button,\n    Tabs,\n    Tab,\n    Table,\n    TableHeader,\n    TableColumn,\n    TableBody,\n    TableRow,\n    TableCell,\n}",
+      "path": "@nextui-org/react"
+    }
+  ],
+  "appStructure": {
+    "components": [
+      {
+        "name": "div",
+        "props": {
+          "className": "App"
+        },
+        "children": [
+          {
+            "name": "div",
+            "children": [
+              {
+                "name": "Navbar",
+                "children": [
+                  {
+                    "name": "NavbarContent",
+                    "children": [
+                      {
+                        "name": "NavbarItem",
+                        "children": [
+                          {
+                            "name": "Link",
+                            "children": [
+                              {
+                                "name": "content",
+                                "value": "Features"
+                              }
+                            ],
+                            "props": {
+                              "color": "primary",
+                              "href": "#"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "name": "NavbarItem",
+                        "children": [
+                          {
+                            "name": "Link",
+                            "children": [
+                              {
+                                "name": "content",
+                                "value": "Customers"
+                              }
+                            ],
+                            "props": {
+                              "href": "#",
+                              "current": "page"
+                            }
+                          }
+                        ],
+                        "props": {}
+                      },
+                      {
+                        "name": "NavbarItem",
+                        "children": [
+                          {
+                            "name": "Link",
+                            "children": [
+                              {
+                                "name": "content",
+                                "value": "Integrations"
+                              }
+                            ],
+                            "props": {
+                              "color": "foreground",
+                              "href": "#"
+                            }
+                          }
+                        ]
+                      }
+                    ],
+                    "props": {
+                      "className": "sm:flex gap-4",
+                      "justify": "center"
+                    }
+                  },
+                  {
+                    "name": "NavbarContent",
+                    "children": [
+                      {
+                        "name": "NavbarItem",
+                        "children": [
+                          {
+                            "name": "Link",
+                            "children": [
+                              {
+                                "name": "content",
+                                "value": "Login"
+                              }
+                            ],
+                            "props": {
+                              "href": "#"
+                            }
+                          }
+                        ],
+                        "props": {
+                          "className": "hidden lg:flex"
+                        }
+                      },
+                      {
+                        "name": "NavbarItem",
+                        "children": [
+                          {
+                            "name": "Button",
+                            "children": [
+                              {
+                                "name": "content",
+                                "value": "Sign Up"
+                              }
+                            ],
+                            "props": {
+                              "color": "primary",
+                              "href": "#",
+                              "variant": "flat"
+                            }
+                          }
+                        ]
+                      }
+                    ],
+                    "props": {
+                      "justify": "end"
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "Accordion",
+                "children": [
+                  {
+                    "name": "AccordionItem",
+                    "children": [
+                      {
+                        "name": "content",
+                        "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,\n                        sed do eiusmod tempor incididunt ut labore et dolore\n                        magna aliqua. Ut enim ad minim veniam, quis nostrud\n                        exercitation ullamco laboris nisi ut aliquip ex ea\n                        commodo consequat."
+                      }
+                    ],
+                    "props": {
+                      "key": "1",
+                      "label": "Accordion 1",
+                      "title": "Accordion 1"
+                    }
+                  },
+                  {
+                    "name": "AccordionItem",
+                    "children": [
+                      {
+                        "name": "content",
+                        "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,\n                        sed do eiusmod tempor incididunt ut labore et dolore\n                        magna aliqua. Ut enim ad minim veniam, quis nostrud\n                        exercitation ullamco laboris nisi ut aliquip ex ea\n                        commodo consequat."
+                      }
+                    ],
+                    "props": {
+                      "key": "2",
+                      "label": "Accordion 2",
+                      "title": "Accordion 2"
+                    }
+                  },
+                  {
+                    "name": "AccordionItem",
+                    "children": [
+                      {
+                        "name": "content",
+                        "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,\n                        sed do eiusmod tempor incididunt ut labore et dolore\n                        magna aliqua. Ut enim ad minim veniam, quis nostrud\n                        exercitation ullamco laboris nisi ut aliquip ex ea\n                        commodo consequat."
+                      }
+                    ],
+                    "props": {
+                      "key": "3",
+                      "label": "Accordion 3",
+                      "title": "Accordion 3"
+                    }
+                  }
+                ]
+              }
+            ],
+            "props": {
+              "className": "App"
+            }
+          },
+          {
+            "name": "div",
+            "children": [
+              {
+                "name": "Card",
+                "children": [
+                  {
+                    "name": "CardBody",
+                    "children": [
+                      {
+                        "name": "p",
+                        "children": [
+                          {
+                            "name": "content",
+                            "value": "Lorem ipsum dolor sit amet, consectetur adipiscing\n                            elit, sed do eiusmod tempor incididunt ut labore et\n                            dolore magna aliqua. Ut enim ad minim veniam, quis\n                            nostrud exercitation ullamco laboris nisi ut aliquip\n                            ex ea commodo consequat."
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "props": {
+              "className": "component"
+            }
+          },
+          {
+            "name": "div",
+            "children": [
+              {
+                "name": "Tabs",
+                "children": [
+                  {
+                    "name": "Tab",
+                    "children": [
+                      {
+                        "name": "Card",
+                        "children": [
+                          {
+                            "name": "CardBody",
+                            "children": [
+                              {
+                                "name": "content",
+                                "value": "Lorem ipsum dolor sit amet, consectetur\n                                    adipiscing elit, sed do eiusmod tempor\n                                    incididunt ut labore et dolore magna aliqua.\n                                    Ut enim ad minim veniam, quis nostrud\n                                    exercitation ullamco laboris nisi ut aliquip\n                                    ex ea commodo consequat."
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "props": {
+                      "key": "photos",
+                      "title": "Photos"
+                    }
+                  },
+                  {
+                    "name": "Tab",
+                    "children": [
+                      {
+                        "name": "Card",
+                        "children": [
+                          {
+                            "name": "CardBody",
+                            "children": [
+                              {
+                                "name": "content",
+                                "value": "Ut enim ad minim veniam, quis nostrud\n                                    exercitation ullamco laboris nisi ut aliquip\n                                    ex ea commodo consequat. Duis aute irure\n                                    dolor in reprehenderit in voluptate velit\n                                    esse cillum dolore eu fugiat nulla pariatur."
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "props": {
+                      "key": "music",
+                      "title": "Music"
+                    }
+                  },
+                  {
+                    "name": "Tab",
+                    "children": [
+                      {
+                        "name": "Card",
+                        "children": [
+                          {
+                            "name": "CardBody",
+                            "children": [
+                              {
+                                "name": "content",
+                                "value": "Excepteur sint occaecat cupidatat non\n                                    proident, sunt in culpa qui officia deserunt\n                                    mollit anim id est laborum."
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "props": {
+                      "key": "videos",
+                      "title": "Videos"
+                    }
+                  }
+                ],
+                "props": {
+                  "label": "Options"
+                }
+              }
+            ],
+            "props": {
+              "className": "component"
+            }
+          },
+          {
+            "name": "div",
+            "children": [
+              {
+                "name": "Table",
+                "children": [
+                  {
+                    "name": "TableHeader",
+                    "children": [
+                      {
+                        "name": "TableColumn",
+                        "children": [
+                          {
+                            "name": "content",
+                            "value": "NAME"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "TableColumn",
+                        "children": [
+                          {
+                            "name": "content",
+                            "value": "ROLE"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "TableColumn",
+                        "children": [
+                          {
+                            "name": "content",
+                            "value": "STATUS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "TableBody",
+                    "children": [
+                      {
+                        "name": "TableRow",
+                        "children": [
+                          {
+                            "name": "TableCell",
+                            "children": [
+                              {
+                                "name": "content",
+                                "value": "Tony Reichert"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "TableCell",
+                            "children": [
+                              {
+                                "name": "content",
+                                "value": "CEO"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "TableCell",
+                            "children": [
+                              {
+                                "name": "content",
+                                "value": "Active"
+                              }
+                            ]
+                          }
+                        ],
+                        "props": {
+                          "key": "1"
+                        }
+                      },
+                      {
+                        "name": "TableRow",
+                        "children": [
+                          {
+                            "name": "TableCell",
+                            "children": [
+                              {
+                                "name": "content",
+                                "value": "Zoey Lang"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "TableCell",
+                            "children": [
+                              {
+                                "name": "content",
+                                "value": "Technical Lead"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "TableCell",
+                            "children": [
+                              {
+                                "name": "content",
+                                "value": "Paused"
+                              }
+                            ]
+                          }
+                        ],
+                        "props": {
+                          "key": "2"
+                        }
+                      },
+                      {
+                        "name": "TableRow",
+                        "children": [
+                          {
+                            "name": "TableCell",
+                            "children": [
+                              {
+                                "name": "content",
+                                "value": "Jane Fisher"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "TableCell",
+                            "children": [
+                              {
+                                "name": "content",
+                                "value": "Senior Developer"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "TableCell",
+                            "children": [
+                              {
+                                "name": "content",
+                                "value": "Active"
+                              }
+                            ]
+                          }
+                        ],
+                        "props": {
+                          "key": "3"
+                        }
+                      },
+                      {
+                        "name": "TableRow",
+                        "children": [
+                          {
+                            "name": "TableCell",
+                            "children": [
+                              {
+                                "name": "content",
+                                "value": "William Howard"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "TableCell",
+                            "children": [
+                              {
+                                "name": "content",
+                                "value": "Community Manager"
+                              }
+                            ]
+                          },
+                          {
+                            "name": "TableCell",
+                            "children": [
+                              {
+                                "name": "content",
+                                "value": "Vacation"
+                              }
+                            ]
+                          }
+                        ],
+                        "props": {
+                          "key": "4"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "props": {
+                  "label": "Example static collection table"
+                }
+              }
+            ],
+            "props": {
+              "className": "component"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
