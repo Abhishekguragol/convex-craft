@@ -25,7 +25,7 @@ const Sidebar = () => {
     const [selectedOption, setSelectedOption] =
         useState<string>("Select a component");
     const [activeDropdown, setActiveDropdown] = useState<number | null>(null);
-    const updateWebsite = useMutation(api.websites.updateWebsite);
+    // const updateWebsite = useMutation(api.websites.updateWebsite);
     const website = useQuery(api.websites.readWebsite, {
         websiteId: "jh779tnrmhbzrngd0zdqhptz9n6jxbh0" as Id<"websites">,
     });
@@ -37,10 +37,10 @@ const Sidebar = () => {
             selectedComponent,
         ]);
         setSelectedOption(`Component ${index + 1}`);
-        updateWebsite({
-            components: [...(website?.components || []), uiCompNames[index]],
-            id: "jh779tnrmhbzrngd0zdqhptz9n6jxbh0" as Id<"websites">,
-        });
+        // updateWebsite({
+        //     components: [...(website?.components || []), uiCompNames[index]],
+        //     id: "jh779tnrmhbzrngd0zdqhptz9n6jxbh0" as Id<"websites">,
+        // });
     };
 
     const handleRemoveClick = (index: number) => {
@@ -56,11 +56,11 @@ const Sidebar = () => {
         setActiveDropdown(null);
     };
 
-    useEffect(() => {
-        const getRes: React.ReactNode[] =
-            website?.components.map((comp) => uiCompMapper[comp]) || [];
-        setSelectedComponents([...getRes]);
-    }, [website]);
+    // useEffect(() => {
+    //     const getRes: React.ReactNode[] =
+    //         website?.components.map((comp) => uiCompMapper[comp]) || [];
+    //     setSelectedComponents([...getRes]);
+    // }, [website]);
 
     return (
         <div className="page-container">
