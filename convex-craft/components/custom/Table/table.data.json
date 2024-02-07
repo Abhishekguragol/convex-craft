@@ -1,0 +1,12 @@
+{
+    "label": "",
+    "columns": 3,
+    "rows": 4,
+    "headers": ["NAME", "ROLE", "STATUS"],
+    "data": [
+        ["Tony Reichert", "CEO", "Active"],
+        ["Zoey Lang", "Technical Lead", "Paused"],
+        ["Jane Fisher", "Senior Developer", "Active"],
+        ["William Howard", "Community Manager", "Vacation"]
+    ]
+}
