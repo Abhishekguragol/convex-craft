@@ -13,6 +13,7 @@ const TableComponent: React.FC<{
     headers: any[];
     data: any[][];
 }> = ({ label, headers, data }) => {
+    console.log(label, headers, data);
     return (
         <div className="component">
             <Table aria-label={label}>
