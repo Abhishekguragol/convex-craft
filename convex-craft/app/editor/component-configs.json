@@ -1,0 +1,38 @@
+{
+    "Navbar": {
+        "component_name": "Navbar",
+        "props": {
+            "brandText": "dev-test",
+            "isBordered": true,
+            "navItems": [
+                { "href": "#", "text": "About" },
+                { "href": "#", "text": "Services" },
+                { "href": "#", "text": "Contact Us" },
+                { "href": "#", "text": "Careers" }
+            ]
+        },
+        "type_class": ""
+    },
+    "Divider": {
+        "component_name": "Divider",
+        "props": {},
+        "type_class": "spaced-component"
+    },
+    "Table": {
+        "component_name": "Table",
+        "props": {
+            "columns": 3,
+            "data": [
+                ["Tony Reichert", "CEO", "Active"],
+                ["Zoey Lang", "Technical Lead", "Paused"],
+                ["Jane Fisher", "Senior Developer", "Active"],
+                ["William Howard", "Community Manager", "Vacation"]
+            ],
+            "headers": ["NAME", "ROLE", "STATUS"],
+            "isStriped": true,
+            "label": "",
+            "rows": 4
+        },
+        "type_class": "spaced-component"
+    }
+}

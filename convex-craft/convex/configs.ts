@@ -63,7 +63,7 @@ export const updateConfig = mutation({
         updatedConfig: v.object({
             version: v.string(),
             website: v.id("websites"),
-            components: v.array(v.string()),
+            components: v.array(v.any()),
             currently_editing: v.array(v.id("users")),
         }),
     },
@@ -75,7 +75,7 @@ export const updateConfig = mutation({
 export const updateConfigComponents = mutation({
     args: {
         configId: v.id("configs"),
-        updatedComponents: v.array(v.string()),
+        updatedComponents: v.array(v.any()),
     },
     handler: async (ctx, args) => {
         await ctx.db.patch(args.configId, {

@@ -25,13 +25,13 @@
     overflow-y: scroll;
 }
 
-#editor_preview {
+#editor_previewer {
     width: 100%;
     height: 100%;
     padding: 10px;
 }
 
-#editor_preview .spaced-component {
+#editor_previewer .spaced-component {
     margin: 20px 40px 20px 40px;
 }
 
@@ -42,5 +42,5 @@
 }
 
 #add-component-button {
-    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    margin: 0.5rem 0;
 }

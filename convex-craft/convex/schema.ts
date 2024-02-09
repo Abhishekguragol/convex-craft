@@ -19,7 +19,7 @@ export default defineSchema(
         configs: defineTable({
             version: v.string(),
             website: v.id("websites"),
-            components: v.array(v.string()),
+            components: v.array(v.any()),
             currently_editing: v.array(v.id("users")),
         }),
     },

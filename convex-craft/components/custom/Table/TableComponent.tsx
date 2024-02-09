@@ -8,22 +8,17 @@ import {
     TableCell,
 } from "@nextui-org/react";
 
-const TableComponent: React.FC<{
-    label: string;
-    headers: any[];
-    data: any[][];
-}> = ({ label, headers, data }) => {
-    console.log(label, headers, data);
+const TableComponent = (props: any) => {
     return (
-        <div className="component">
-            <Table aria-label={label}>
+        <div>
+            <Table aria-label={props.label} isStriped={props.isStriped}>
                 <TableHeader>
-                    {headers.map((header) => (
+                    {props.headers.map((header: string) => (
                         <TableColumn>{header}</TableColumn>
                     ))}
                 </TableHeader>
                 <TableBody>
-                    {data.map((row, ind) => {
+                    {props.data.map((row: string[], ind: number) => {
                         return (
                             <TableRow key={ind}>
                                 {row.map((col) => {
